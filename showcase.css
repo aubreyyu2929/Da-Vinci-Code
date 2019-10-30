@@ -1,0 +1,205 @@
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+/*Showcase*/
+#showcase{
+    position: relative;
+    /* margin-top: 50px; */
+    background-image: url("images/Louvre.jpg");
+    background-position: center;    
+    border: 2px solid #888;
+    padding:30px 80px;
+    border-radius: 10px;    
+    display:flex;
+    justify-content: center;  
+    flex-wrap: nowrap;    
+}
+
+#showcasetwo{
+    position: relative;
+    margin-top: 50px;
+    background-image: url("images/bg.jpg");
+    background-position: center;    
+    border: 2px solid #888;
+    padding:30px 80px;
+    border-radius: 10px;
+    display:flex;
+    justify-content: center;  
+    flex-wrap: nowrap;    
+}
+#showcasethree{
+    position: relative;
+    margin-top: 50px;
+    background-image: url("images/bg3.jpg");
+    background-position: center;    
+    border: 2px solid #888;
+    padding:30px 100px;
+    border-radius: 10px;
+    justify-content: center;      
+}
+
+.main-container {
+    display: flex;
+    justify-content: center
+}
+
+.container{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.person-container {
+    position: relative;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.containertwo{
+    background-color:rgb(253, 254, 254,0.8);
+    border-radius: 50px;
+}
+
+.containerthree{
+    background-color:rgb(253, 254, 254,0.8);
+    border-radius: 50px;
+}
+#character p, #charactertwo p{
+    font-size: 0.8em;
+    text-align: center;
+}
+#character img, #charactertwo img{
+    height:100px;
+}
+
+
+/* pop-up dialog */
+.dialog-trigger{
+    font-size: 0.8em;
+    color: #888;
+    text-decoration: none;
+}
+
+.dialog{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%; 
+    position: absolute;
+    width: 200px;
+    height: 150px;
+}
+
+#dialogone, #dialogtwo{
+    position: absolute;
+    left:0;
+    top:0;
+    transition: all 0.6s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#dialogone {
+    right: 100%;
+    left: auto;
+}
+
+#dialogtwo {
+    left: 100%;
+}
+
+#dialogone .dialog{
+    position: relative;
+    background-image: url("images/dialog1.png");
+    position: relative;
+    top: -50px;
+    left: 10px;
+}
+
+#dialogtwo .dialog{
+    background-image: url("images/dialog2.png");
+    position: relative;
+    position: relative;
+    top: -50px;
+    right: 10px;
+}
+.dialog a{
+    color:black;
+    text-decoration: none;
+}
+
+.closebtn::before{
+    content:"\2716";
+}
+
+#dialogone .closebtn{
+    margin-left:20px;
+}
+#dialogtwo .closebtn{
+    margin-left:100px;
+}
+
+body.show-dialogone,body.show-dialogtwo {
+    overflow: hidden;
+}
+body.show-dialogone #dialogone, body.show-dialogtwo #dialogtwo{
+    visibility: visible;
+    opacity: 1;
+}
+
+.dialog p{
+    font-size: 0.8em;
+    text-align: center;
+}
+
+#dialogone p{
+    margin: 30px 20px;
+}
+#dialogtwo p{
+    margin:10px 15px;
+}
+
+#character, #charactertwo{
+    background-color: rgb(253, 254, 254,0.8);
+    border-radius: 100px;
+    width:130px;
+    height:220px;
+}
+
+#quotebox{
+    display: flex;
+    justify-content: center;
+    width:100%;
+    border-radius: 30px;
+    background: rgb(253, 254, 254,0.1);
+    padding:10px 5px;
+    z-index: 99;
+}
+    
+#quotebox blockquote p:first-of-type:first-letter{
+    float: left;
+	font-size: 3em;
+	color:#c39738;
+	margin-top: -0.8em;
+	margin-right: 0.1em;
+}
+#quotebox blockquote p:nth-child(1){
+    font-family: 'Satisfy', cursive;
+    color:black;
+}
+#quotebox > blockquote::before{
+    content: url("images/quote\ b.png")
+}
+blockquote > p:nth-child(1):after{
+    content: url("images/quote\ a.png")
+}
+
+blockquote p:nth-child(2){
+    color:black;
+    font-size:1em;
+    font-family: 'Times New Roman', Times, serif;
+    text-indent: 18em;
+}

@@ -1,0 +1,139 @@
+
+
+
+h1{
+    font-family: 'ZCOOL KuaiLe';
+    color: whitesmoke;
+}
+#context{
+    text-align: center;
+    padding:20px;
+    font-family: 'Satisfy', cursive;
+}
+
+.crackcode h2{
+    padding:5px;
+    margin:20px 200px;
+    font-family: 'Satisfy', cursive;
+}
+
+.crackcode h2:hover{
+    color:whitesmoke;
+    background: #C39738;
+    border-radius:30px;
+    cursor: pointer;
+}
+
+.qbtn{
+    font-weight: bold;
+    color:#C39738;
+    background-color: whitesmoke;
+    padding: 0.5em 1em;
+    border:0;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 20px;
+    margin-top:10px;
+}
+.showanswer a{
+    color:#C39738;
+    text-decoration: none;
+    font-size: 0.6em;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.showanswer p{
+    font-size: 0.6em;
+}
+.qbtn:hover{
+    background-color: #C39738;
+    color:whitesmoke;
+}
+label,input{
+    margin-top:10px;
+}
+.crackcode{
+    text-align: center;  
+}
+#codeform{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+legend{
+    text-transform: uppercase;
+    font-weight: bold;
+    color:rgb(70, 49, 5);
+    background-color:  #F4F4F4;
+    border-radius:10px;
+    padding:5px;
+}
+
+/* Tabnav */
+
+.tabnav{
+    overflow: hidden;
+    border: 1px solid  #F4F4F4 ;
+    background-color:  #373737;
+}
+
+.tabnav button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.5s;
+    font-size: 20px;
+    color:#F4F4F4;
+    font-family: 'Love Ya Like A Sister';
+}
+
+.tabnav button:hover {
+    background-color:#DCD0C0;
+}
+
+
+.map{
+    display: flex;
+    justify-content: center; 
+    height: 300px;
+}
+
+.map iframe{
+    height:100%;
+    width: 100%;
+}
+
+
+
+.panel .tabcontent {
+    display:none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.panel .tabcontent.active{
+    display: block;
+}
+
+.tabcontent a{
+    text-decoration: none;
+    color:#373737 ;
+    background-color:whitesmoke;
+    border-radius: 20px;
+    padding:5px;
+    transition:0.5s;
+}
+
+.tabcontent a:hover{
+    color:#F4F4F4 ;
+    background-color:#373737;
+}

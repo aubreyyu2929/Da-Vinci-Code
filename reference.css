@@ -1,0 +1,15 @@
+
+body{
+    background-image: none;
+    background-color: #DCD0C0;
+}
+section{
+    margin-top:50px;
+}
+
+section img{
+    height:200px;
+}
+li{
+    padding-top: 20px;
+}

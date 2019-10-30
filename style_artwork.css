@@ -1,0 +1,72 @@
+
+
+/*waterflow gallery*/
+* {
+    box-sizing: border-box;
+}
+h1{
+    font-family: 'ZCOOL KuaiLe';
+    font-size: 3em;
+}
+main{
+    margin: 0 auto;  
+    padding:1em;
+    max-width: 100em;
+}
+section{
+    margin-top:50px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50 50px;
+}
+
+.block{
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 2px;
+}
+  
+/* Create four equal columns that sits next to each other */
+.column {
+flex: 25%;
+max-width: 20%;
+padding: 0 10px;
+}
+
+.column img {
+margin-top: 0;
+
+vertical-align: center;
+width: 100%;
+}
+
+.block.btn{
+    position: absolute;
+}
+.btn{
+    color: white;
+    background-color:#C39738;
+    border: none;
+    cursor: pointer;}
+
+.content a{
+    text-decoration: none;
+    color:black;
+    
+}
+
+.content span{
+    font-weight: bold;
+}
+
+.content a:hover{
+    color: #C39738;
+}
+
+.block{
+    margin-top:10px;
+    padding-bottom: 5px;
+}
+
